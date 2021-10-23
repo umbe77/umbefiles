@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+#wal -R -n -s -t -o wal-postrun
+
+nitrogen --head=0 --set-scaled "$HOME/.config/wallpaper/wal"
+nitrogen --head=1 --set-scaled "$HOME/.config/wallpaper/wal"

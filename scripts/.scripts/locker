@@ -1,0 +1,4 @@
+#!/bin/sh
+
+#i3lock -i "$HOME/.config/wallpaper/lock.png"
+betterlockscreen --lock blur

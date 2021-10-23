@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+#echo "$@" >> ~/.logs/ask-pass.log
+#echo "=====================" >> ~/.logs/ask-pass.log
+
+zenity --password --title="$1" --timeout=10

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+ENGINE=$(sr -elvi | tail -n +2 | rofi -dmenu -1 | awk '{print $1}')
+
+SEARCH=$(echo "Search on $ENGINE" | rofi -dmenu)
+
+sr $ENGINE $SEARCH
