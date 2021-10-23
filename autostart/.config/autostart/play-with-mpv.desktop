@@ -1,0 +1,7 @@
+[Desktop Entry]
+Categories=AudioVideo;Audio;Video;Player
+Comment=mpv server for chrome extension
+Exec=play-with-mpv
+Icon=play-with-mpv
+Name=Play With MPV (Server)
+Type=Application
