@@ -223,3 +223,4 @@ lualine.setup(config)
 -- 		theme = 'onedark'
 -- 	}
 -- })
+

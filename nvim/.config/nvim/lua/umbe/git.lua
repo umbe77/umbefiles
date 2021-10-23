@@ -1,3 +1,4 @@
+-- git_signs
 require('gitsigns').setup {
   signs = {
     -- TODO add hl to colorscheme
@@ -22,3 +23,8 @@ require('gitsigns').setup {
   status_formatter = nil, -- Use default
   use_decoration_api = false
 }
+
+-- gitblam
+vim.cmd('highlight default link gitblame SpecialComment')
+vim.g.gitblame_enabled = 0
+

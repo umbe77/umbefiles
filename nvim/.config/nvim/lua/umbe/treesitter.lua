@@ -1,4 +1,4 @@
-require'nvim-treesitter.configs'.setup {
+require"nvim-treesitter.configs".setup {
     ensure_installed = 'all', -- one of "all", "maintained" (parsers with maintainers), or a list of languages
     -- TODO seems to be broken
     ignore_install = {"haskell"},
@@ -6,7 +6,7 @@ require'nvim-treesitter.configs'.setup {
         enable = true -- false will disable the whole extension
     },
     -- indent = {enable = true, disable = {"python", "html", "javascript"}},
-    indent = {enable = {"javascriptreact"}},
+    indent = {enable = {"javascriptreact", "lua", "go", "csharp"}},
     playground = {
         enable = true,
         disable = {},

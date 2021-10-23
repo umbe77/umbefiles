@@ -1,42 +1,14 @@
-require('packer_plugins')
-require('nv-utils')
-require('globals')
-require('keymappings')
-require('settings')
-require('colorscheme')
-require('statusline')
+require "packer_plugins"
+require "colorscheme"
+require "keymappings"
+require "settings"
 
-require('nv-colorizer')
-
--- Plugins
-require('nv-treesitter')
-require('nv-indentline')
-require('nv-comment')
-
---require('nv-barbar')
-require('nv-nvimtree')
-require('nv-cmp')
-require('nv-autopairs')
-
-require('nv-lspkind')
-require('nv-lightbulb')
-
-vim.cmd('source ~/.config/nvim/vim/nv-wichkey.vim')
-vim.cmd('source ~/.config/nvim/vim/functions.vim')
---vim.cmd('source ~/.config/nvim/vim/nv-minimap.vim')
-
---Telescope
-require('nv-telescope')
-
-require('nv-gitsigns')
-require('nv-gitblame')
-
-require('lsp')
-require('lsp.lua-ls')
-require('lsp.virtual_text')
-require('lsp.go-ls')
-require('lsp.js-ts-ls')
-require('lsp.omnisharp')
-require('lsp.bash-ls')
-require('lsp.efm-general-ls')
-require('lsp.svelte')
+require "umbe.telescope"
+require "umbe.treesitter"
+require "umbe.indent"
+require "umbe.lualine"
+require "umbe.comment"
+require "umbe.lightbulb"
+require "umbe.completion"
+require "umbe.git"
+require "umbe.lsp"

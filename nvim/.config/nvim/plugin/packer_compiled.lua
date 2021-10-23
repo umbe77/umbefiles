@@ -109,21 +109,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/roberto/.local/share/nvim/site/pack/packer/start/lualine.nvim"
   },
-  ["nvim-autopairs"] = {
-    loaded = true,
-    path = "/home/roberto/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
-  },
-  ["nvim-bqf"] = {
-    loaded = true,
-    path = "/home/roberto/.local/share/nvim/site/pack/packer/start/nvim-bqf"
-  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/roberto/.local/share/nvim/site/pack/packer/start/nvim-cmp"
-  },
-  ["nvim-colorizer.lua"] = {
-    loaded = true,
-    path = "/home/roberto/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua"
   },
   ["nvim-comment"] = {
     loaded = true,
@@ -141,17 +129,9 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/roberto/.local/share/nvim/site/pack/packer/start/nvim-lspinstall"
   },
-  ["nvim-tree.lua"] = {
-    loaded = true,
-    path = "/home/roberto/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
-  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/roberto/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
-  },
-  ["nvim-ts-rainbow"] = {
-    loaded = true,
-    path = "/home/roberto/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -181,37 +161,13 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/roberto/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
-  ["vim-dadbod"] = {
-    loaded = true,
-    path = "/home/roberto/.local/share/nvim/site/pack/packer/start/vim-dadbod"
-  },
-  ["vim-dadbod-completion"] = {
-    loaded = true,
-    path = "/home/roberto/.local/share/nvim/site/pack/packer/start/vim-dadbod-completion"
-  },
-  ["vim-dadbod-ui"] = {
-    loaded = true,
-    path = "/home/roberto/.local/share/nvim/site/pack/packer/start/vim-dadbod-ui"
-  },
   ["vim-devicons"] = {
     loaded = true,
     path = "/home/roberto/.local/share/nvim/site/pack/packer/start/vim-devicons"
   },
-  ["vim-floaterm"] = {
-    loaded = true,
-    path = "/home/roberto/.local/share/nvim/site/pack/packer/start/vim-floaterm"
-  },
-  ["vim-polyglot"] = {
-    loaded = true,
-    path = "/home/roberto/.local/share/nvim/site/pack/packer/start/vim-polyglot"
-  },
   ["vim-vsnip"] = {
     loaded = true,
     path = "/home/roberto/.local/share/nvim/site/pack/packer/start/vim-vsnip"
-  },
-  ["vim-which-key"] = {
-    loaded = true,
-    path = "/home/roberto/.local/share/nvim/site/pack/packer/start/vim-which-key"
   }
 }
 

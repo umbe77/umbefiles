@@ -4,17 +4,6 @@ vim.g.mapleader = ' '
 -- no hl
 vim.api.nvim_set_keymap('n', '<Leader>h', ':set hlsearch!<CR>', {noremap = true, silent = true})
 
--- explorer
-vim.api.nvim_set_keymap('n', '<Leader>e', ':NvimTreeToggle<CR>', {noremap = true, silent = true})
-
--- better window movement
-vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', {silent = true})
-vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', {silent = true})
-vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', {silent = true})
-vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', {silent = true})
-
--- TODO fix this
--- Terminal window navigation
 vim.cmd([[
   tnoremap <C-h> <C-\><C-N><C-w>h
   tnoremap <C-j> <C-\><C-N><C-w>j
@@ -56,17 +45,15 @@ vim.api.nvim_set_keymap('x', 'J', ':move \'>+1<CR>gv-gv', {noremap = true, silen
 -- Better nav for omnicomplete
 vim.cmd('inoremap <expr> <c-j> (\"\\<C-n>\")')
 vim.cmd('inoremap <expr> <c-k> (\"\\<C-p>\")')
--- vim.cmd('inoremap <expr> <TAB> (\"\\<C-n>\")')
--- vim.cmd('inoremap <expr> <S-TAB> (\"\\<C-p>\")')
 
--- Searce vim commands
---vim.api.nvim_set_keymap('n', 'P', ':Telescope commands<CR>', {noremap = true, silent = true})
+-- Formatting files
+vim.api.nvim_set_keymap('n', '<leader>ff', ':lua vim.lsp.buf.formatting()', {noremap = true, silent = true})
+ 
+-- Telescope Mappings
 vim.api.nvim_set_keymap('n', '<Leader>P', ':Telescope commands<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<Leader>p', ':Telescope find_files<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<Leader>F', ':Telescope live_grep<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<Leader>f', ':Telescope current_buffer_fuzzy_find<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<Leader>e', ':Telescope file_browser<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<Leader>o', ':Telescope buffers<CR>', {noremap = true, silent = true})
-
--- vim.api.nvim_set_keymap('i', '<C-TAB>', 'compe#complete()', {noremap = true, silent = true, expr = true})
 
