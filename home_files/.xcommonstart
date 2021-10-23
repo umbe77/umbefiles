@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+
+~/.screenlayout/umbedesk.sh
+
+dunst &
+picom &
+xbanish &
+xpad &
+xautolock -time 10 -locker ~/.scripts/locker &
+
+start-pulseaudio-x11 &
+~/.scripts/restorebg & 
+xrdb -merge ~/.Xresources &
+xsetroot -cursor_name left_ptr &
+
+#setxkbmap it
+~/.scripts/set_current_city 1 &
+
+#map CapsLock to Escape key
+setxkbmap -option caps:escape &
+
+killall -q blueman-applet
+while pgrep -u $UID -x blueman-applet >/dev/null; do sleep 1; done
+
+command -v blueman > /dev/null && blueman-applet &
+
+killall -q nm-applet
+while pgrep -u $UID -x nm-applet >/dev/null; do sleep 1; done
+
+command -v nm-applet > /dev/null && nm-applet &
+
+killall -q udiskie
+while pgrep -u $UID -x udiskie >/dev/null; do sleep 1; done
+
+command -v udiskie > /dev/null && udiskie -t -n &
+

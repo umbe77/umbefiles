@@ -1,0 +1,23 @@
+#alias ls='ls --color=auto'
+alias vi='nvim'
+alias startx='ssh-agent startx'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias ls='exa -l --icons --git --group --color=always --group-directories-first' # my preferred listing
+alias ll='exa -al --icons --git --group --color=always --group-directories-first'
+alias lt='exa -T --icons --git --group --color=always --group-directories-first' # tree listing
+# alias ls='lsd -Fl'
+# alias ll='lsd -aFl'
+alias ip='ip -color=auto'
+alias df='df -h'
+alias cat='bat'
+alias sudo='sudo -E'
+alias up='uptime -p'
+alias ups='uptime -s'
+
+alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
+alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
+alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
+alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
+
+alias update='sudo pacman -Syyyu'
+alias upall="paru -Syyyu --noconfirm"
