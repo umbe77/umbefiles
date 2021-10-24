@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+SESSION_NAME=$1
+! [ -n "$SESSION_NAME" ] && echo "Specify Session name" && exit 1
+
+tmux new-session -d -s "$SESSION_NAME"
+
+echo -n "attach to new session? [Y/n]: "
+read -r attach
+
+$(
+	[ "$attach" == "y" ] ||
+	[ "$attach" == "Y" ] ||
+	! [ -n "$attach" ]
+) && tmux attach -t "$SESSION_NAME"
