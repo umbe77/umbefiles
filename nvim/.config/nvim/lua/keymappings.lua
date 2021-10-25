@@ -42,8 +42,8 @@ vim.api.nvim_set_keymap('n', '<leader>ff', ':lua vim.lsp.buf.formatting()', {nor
 -- Telescope Mappings
 vim.api.nvim_set_keymap('n', '<Leader>P', ':Telescope commands<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<Leader>p', ':Telescope find_files<CR>', {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<Leader>F', ':Telescope live_grep<CR>', {noremap = true, silent = true})
-vim.api.nvim_set_keymap('n', '<Leader>f', ':Telescope current_buffer_fuzzy_find<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', 'fa', ':Telescope live_grep<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', 'fd', ':Telescope current_buffer_fuzzy_find<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<Leader>e', ':Telescope file_browser<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<Leader>o', ':Telescope buffers<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', 'ca', ':Telescope lsp_code_actions<CR>', {noremap = true, silent = true})
