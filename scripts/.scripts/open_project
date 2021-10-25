@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+TMUX_WORKSPACE_FILE=".workspace.tmux"
+
 PROJECT_FOLDER=$1
 if ! [ -n "$PROJECT_FOLDER" ]; then
 	if [ -n "$DEFAULT_PROJECT_LOCATION" ]; then
@@ -17,5 +19,12 @@ if ! [ -n "$selected_folder" ]; then
 fi
 
 cd "$selected_folder"
-tmux new -d -s "$selected_folder"
+SESSION_EXISTS=$(tmux list-sessions -F "#{session_name}" | rg "$selected_folder")
+
+if [ -z "$SESSION_EXISTS" ]; then
+    tmux new -d -s "$selected_folder"
+    if [ -f "$TMUX_WORKSPACE_FILE" ]; then
+        source "$TMUX_WORKSPACE_FILE"
+    fi
+fi
 ta "$selected_folder"

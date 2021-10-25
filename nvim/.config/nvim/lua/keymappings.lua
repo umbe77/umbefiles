@@ -47,4 +47,4 @@ vim.api.nvim_set_keymap('n', 'fd', ':Telescope current_buffer_fuzzy_find<CR>', {
 vim.api.nvim_set_keymap('n', '<Leader>e', ':Telescope file_browser<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', '<Leader>o', ':Telescope buffers<CR>', {noremap = true, silent = true})
 vim.api.nvim_set_keymap('n', 'ca', ':Telescope lsp_code_actions<CR>', {noremap = true, silent = true})
-
+vim.api.nvim_set_keymap('n', 'rn', ':Lspsaga rename<CR>', {noremap = true, silent = true})

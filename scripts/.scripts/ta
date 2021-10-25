@@ -16,5 +16,5 @@ if ! [ -n "$TMUX" ]; then
 else
     #if in a session detach current session and then attach te selected one
     tmux switch -t $SESSION_NAME
-    tmux display-message "Switched to session $SESSION_NAME"
+    tmux display-message -d 1000 "    #[bold]Switched#[default] to session #[bold]$SESSION_NAME"
 fi
