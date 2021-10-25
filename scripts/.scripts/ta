@@ -1,5 +1,15 @@
 #!/usr/bin/env bash
-SESSION_NAME=$(tmux ls -F '#{session_name}' | fzf --reverse)
+if ! [ -n "$1" ]; then
+	SESSION_NAME=$(tmux ls -F '#{session_name}' | fzf --reverse)
+else
+	SESSION_NAME=$1
+fi
+
+if ! [ -n "$SESSION_NAME" ]; then
+    #No session selected
+    exit 0
+fi
+
 if ! [ -n "$TMUX" ]; then
     #if not tmux session attach to selected
     tmux attach -t $SESSION_NAME
