@@ -23,8 +23,6 @@ SESSION_EXISTS=$(tmux list-sessions -F "#{session_name}" | rg "$selected_folder"
 
 if [ -z "$SESSION_EXISTS" ]; then
     tmux new -d -s "$selected_folder"
-    if [ -f "$TMUX_WORKSPACE_FILE" ]; then
-        source "$TMUX_WORKSPACE_FILE"
-    fi
 fi
 ta "$selected_folder"
+source "$HOME/.scripts/default_workspace.tmux"
