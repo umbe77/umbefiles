@@ -46,5 +46,10 @@ return require"packer".startup(function(use)
 	-- git
     use {'lewis6991/gitsigns.nvim', requires = {'nvim-lua/plenary.nvim'}}
     use 'f-person/git-blame.nvim'
+
+	-- orgmode
+	use 'kristijanhusak/orgmode.nvim'
+	use 'akinsho/org-bullets.nvim'
+	use 'lukas-reineke/headlines.nvim'
 end)
 

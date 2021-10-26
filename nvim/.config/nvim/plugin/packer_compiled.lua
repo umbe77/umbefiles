@@ -89,6 +89,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/roberto/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
   },
+  ["headlines.nvim"] = {
+    loaded = true,
+    path = "/home/roberto/.local/share/nvim/site/pack/packer/start/headlines.nvim"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/roberto/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
@@ -144,6 +148,14 @@ _G.packer_plugins = {
   ["onedark.nvim"] = {
     loaded = true,
     path = "/home/roberto/.local/share/nvim/site/pack/packer/start/onedark.nvim"
+  },
+  ["org-bullets.nvim"] = {
+    loaded = true,
+    path = "/home/roberto/.local/share/nvim/site/pack/packer/start/org-bullets.nvim"
+  },
+  ["orgmode.nvim"] = {
+    loaded = true,
+    path = "/home/roberto/.local/share/nvim/site/pack/packer/start/orgmode.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
