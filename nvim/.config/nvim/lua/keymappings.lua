@@ -48,3 +48,6 @@ vim.api.nvim_set_keymap('n', '<Leader>e', ':Telescope file_browser<CR>', { silen
 vim.api.nvim_set_keymap('n', '<Leader>b', ':Telescope buffers<CR>', { silent = true})
 vim.api.nvim_set_keymap('n', 'ca', ':Telescope lsp_code_actions<CR>', { silent = true})
 vim.api.nvim_set_keymap('n', 'rn', ':Lspsaga rename<CR>', { silent = true})
+
+-- Execute lua inside nvim
+vim.api.nvim_set_keymap('n', '<F5>', ':luafile %<CR>', {silent = true})
