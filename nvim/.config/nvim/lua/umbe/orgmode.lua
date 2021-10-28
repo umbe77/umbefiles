@@ -5,6 +5,8 @@ require"orgmode".setup{
 		org = {
 			org_insert_todo_heading = 'oit',
 			org_time_stamp = '<Leader>oq',
+			org_todo = '<Leader>od',
+			org_open_at_point = '<Leader>ow',
 		},
 	},
 }
