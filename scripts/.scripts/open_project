@@ -12,7 +12,7 @@ if ! [ -n "$PROJECT_FOLDER" ]; then
 fi
 
 cd "$PROJECT_FOLDER"
-selected_folder=$(/usr/bin/ls -1 . | fzf --reverse)
+selected_folder=$(exa -1 -d */ | fzf --reverse)
 
 if ! [ -n "$selected_folder" ]; then
 	exit 0
