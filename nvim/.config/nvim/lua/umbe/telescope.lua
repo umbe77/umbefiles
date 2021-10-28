@@ -2,8 +2,9 @@ local actions = require('telescope.actions')
 -- Global remapping
 ------------------------------
 -- '--color=never',
-require('telescope').load_extension('media_files')
-require('telescope').setup {
+local telescope = require"telescope"
+telescope.load_extension('media_files')
+telescope.setup {
     defaults = {
         find_command = {'rg', '--no-heading', '--with-filename', '--line-number', '--column', '--smart-case'},
         prompt_prefix = " ",
@@ -67,3 +68,7 @@ require('telescope').setup {
         }
     }
 }
+
+telescope.load_extension('neoclip')
+telescope.load_extension("notify")
+

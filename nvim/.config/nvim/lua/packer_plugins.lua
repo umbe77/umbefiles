@@ -52,7 +52,18 @@ return require"packer".startup(function(use)
 
 	-- miscellanea
     use 'windwp/nvim-autopairs'
-	use 'rcarriga/nvim-notify'
-
+	use {
+		'rcarriga/nvim-notify',
+		config = function ()
+			require"notify".setup{}
+		end
+	}
+	use {
+		"AckslD/nvim-neoclip.lua",
+		requires = {'tami5/sqlite.lua', module = 'sqlite'},
+		config = function()
+			require "neoclip".setup{}
+		end
+	}
 end)
 
