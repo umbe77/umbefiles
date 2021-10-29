@@ -46,7 +46,7 @@ return require"packer".startup(function(use)
 	use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
 	use 'sindrets/diffview.nvim'
 	-- orgmode
-	use 'kristijanhusak/orgmode.nvim'
+	use {'kristijanhusak/orgmode.nvim',  branch = 'tree-sitter' }
 	use 'akinsho/org-bullets.nvim'
 	use 'lukas-reineke/headlines.nvim'
 
