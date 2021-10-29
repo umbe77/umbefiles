@@ -1,5 +1,7 @@
 #alias ls='ls --color=auto'
 alias vi='nvim'
+alias v='nvim'
+alias nv='nvim'
 alias startx='ssh-agent startx'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias ls='exa -l --icons --git --group --color=always --group-directories-first' # my preferred listing
