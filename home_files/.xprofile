@@ -14,7 +14,8 @@ lxpolkit &
 nitrogen --restore &
 start-pulseaudio-x11 &
 ulauncher --no-window-shadow --hide-window &
-# xfce4-power-manager --daemon
+setxkbmap -option grp:alt_shift_toggle us,it -option caps:escape &
+# xfce4-power-manager --daemon  
 
 #killall -q ulauncher
 #
@@ -36,7 +37,7 @@ command -v volumeicon > /dev/null && volumeicon &
  killall -q nm-applet
  while pgrep -u $UID -x nm-applet >/dev/null; do sleep 1; done
  
- command -v nm-applet > /dev/null && nm-applet &
+command -v nm-applet > /dev/null && nm-applet &
 
 killall -q udiskie
 while pgrep -u $UID -x udiskie >/dev/null; do sleep 1; done
