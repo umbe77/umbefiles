@@ -45,6 +45,7 @@ return require"packer".startup(function(use)
     use 'f-person/git-blame.nvim'
 	use { 'TimUntersberger/neogit', requires = 'nvim-lua/plenary.nvim' }
 	use 'sindrets/diffview.nvim'
+
 	-- orgmode
 	use {'kristijanhusak/orgmode.nvim',  branch = 'tree-sitter' }
 	use 'akinsho/org-bullets.nvim'
@@ -64,6 +65,17 @@ return require"packer".startup(function(use)
 		config = function()
 			require "neoclip".setup{}
 		end
+	}
+	use {
+	  "folke/todo-comments.nvim",
+	  requires = "nvim-lua/plenary.nvim",
+	  config = function()
+		require("todo-comments").setup {
+		  -- your configuration comes here
+		  -- or leave it empty to use the default settings
+		  -- refer to the configuration section below
+		}
+	  end
 	}
 end)
 
