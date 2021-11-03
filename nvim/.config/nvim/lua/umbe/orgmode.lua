@@ -7,6 +7,10 @@ require"orgmode".setup{
 			org_time_stamp = '<Leader>oq',
 			org_todo = '<Leader>od',
 			org_open_at_point = '<Leader>ow',
+			org_do_promote = '<Leader>,',
+			org_do_demote = '<Leader>.',
+			org_promote_subtree = '<Leader>,q',
+			org_demote_subtree = '<Leader>.q',
 		},
 	},
 }
@@ -15,4 +19,4 @@ require"org-bullets".setup{
     symbols = { "◉", "○", "✸", "✿" }
 }
 
-require"headlines".setup{}
+ require"headlines".setup{}

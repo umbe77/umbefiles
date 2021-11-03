@@ -1,6 +1,6 @@
-vim.api.nvim_set_keymap('n', '<Space>', '<NOP>', {noremap = true, silent = true})
+--vim.api.nvim_set_keymap('n', '<Space>', '<NOP>', {noremap = true, silent = true})
 vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+--vim.g.maplocalleader = ' '
 
 -- no hl
 vim.api.nvim_set_keymap('n', '<Leader>h', ':set hlsearch!<CR>', {noremap = true, silent = true})
@@ -41,16 +41,16 @@ vim.cmd('inoremap <expr> <c-k> (\"\\<C-p>\")')
 vim.api.nvim_set_keymap('n', '<leader>ff', ':lua vim.lsp.buf.formatting()', {noremap = true, silent = true})
 
 -- Telescope Mappings
-vim.api.nvim_set_keymap('n', '<Leader>P', ':Telescope commands<CR>', { silent = true})
-vim.api.nvim_set_keymap('n', '<Leader>p', ':Telescope find_files<CR>', { silent = true})
-vim.api.nvim_set_keymap('n', 'fa', ':Telescope live_grep<CR>', { silent = true})
-vim.api.nvim_set_keymap('n', 'fd', ':Telescope current_buffer_fuzzy_find<CR>', { silent = true})
-vim.api.nvim_set_keymap('n', '<Leader>e', ':Telescope file_browser<CR>', { silent = true})
-vim.api.nvim_set_keymap('n', '<Leader>b', ':Telescope buffers<CR>', { silent = true})
-vim.api.nvim_set_keymap('n', 'rf', ':Telescope lsp_references<CR>', {silent = true})
-vim.api.nvim_set_keymap('n', 'df', ':Telescope lsp_definitions<CR>', {silent = true})
-vim.api.nvim_set_keymap('n', '<Leader>ca', ':Telescope lsp_code_actions<CR>', { silent = true})
-vim.api.nvim_set_keymap('n', 'rn', ':Lspsaga rename<CR>', { silent = true})
+vim.api.nvim_set_keymap('n', '<Leader>P', ':Telescope commands<CR>', { noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<Leader>p', ':Telescope find_files<CR>', { noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', 'fa', ':Telescope live_grep<CR>', { noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', 'fd', ':Telescope current_buffer_fuzzy_find<CR>', { noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<Leader>e', ':Telescope file_browser<CR>', { noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<Leader>b', ':Telescope buffers<CR>', { noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', 'rf', ':Telescope lsp_references<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', 'df', ':Telescope lsp_definitions<CR>', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<Leader>ca', ':Telescope lsp_code_actions<CR>', { noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', 'rn', ':Lspsaga rename<CR>', { noremap = true, silent = true})
 
 -- Execute lua inside nvim
-vim.api.nvim_set_keymap('n', '<F5>', ':luafile %<CR>', {silent = true})
+vim.api.nvim_set_keymap('n', '<F5>', ':luafile %<CR>', {noremap = true, silent = true})

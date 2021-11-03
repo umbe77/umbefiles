@@ -21,7 +21,7 @@ require"nvim-treesitter.configs".setup {
     indent = {enable = {"javascriptreact", "lua", "go", "csharp"}},
     playground = {
         enable = true,
-        disable = {},
+        disable = {'org'},
         updatetime = 25, -- Debounced time for highlighting nodes in the playground from source code
         persist_queries = false -- Whether the query persists across vim sessions
     },
