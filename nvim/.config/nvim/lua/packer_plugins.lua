@@ -27,7 +27,9 @@ return require"packer".startup(function(use)
 	-- Colorscheme and connected indent lines
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
     use {'lukas-reineke/indent-blankline.nvim'}
+	-- use 'sunjon/shade.nvim'
     use 'navarasu/onedark.nvim'
+	-- use 'EdenEast/nightfox.nvim'
 	use {
 	  'hoob3rt/lualine.nvim',
 	  requires = {'kyazdani42/nvim-web-devicons', opt = true}
@@ -47,7 +49,7 @@ return require"packer".startup(function(use)
 	use 'sindrets/diffview.nvim'
 
 	-- orgmode
-	use {'kristijanhusak/orgmode.nvim',  branch = 'tree-sitter' }
+	use {'kristijanhusak/orgmode.nvim'}
 	use 'akinsho/org-bullets.nvim'
 	use 'lukas-reineke/headlines.nvim'
 
