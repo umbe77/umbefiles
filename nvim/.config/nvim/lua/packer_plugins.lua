@@ -29,7 +29,7 @@ return require"packer".startup(function(use)
     use {'lukas-reineke/indent-blankline.nvim'}
 	-- use 'sunjon/shade.nvim'
     use 'navarasu/onedark.nvim'
-	-- use 'EdenEast/nightfox.nvim'
+	use 'EdenEast/nightfox.nvim'
 	use {
 	  'hoob3rt/lualine.nvim',
 	  requires = {'kyazdani42/nvim-web-devicons', opt = true}

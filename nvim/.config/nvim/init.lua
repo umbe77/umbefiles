@@ -13,3 +13,6 @@ require "umbe.lightbulb"
 require "umbe.completion"
 require "umbe.git"
 require "umbe.lsp"
+
+--Personal Plugins
+require "gitignore".setup()
