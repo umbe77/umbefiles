@@ -19,7 +19,7 @@ if ! [ -n "$selected_folder" ]; then
 fi
 
 cd "$selected_folder"
-SESSION_EXISTS=$(tmux list-sessions -F "#{session_name}" | rg "$selected_folder")
+SESSION_EXISTS=$(tmux list-sessions -F "#{session_name}" | rg "^$selected_folder\$")
 
 if [ -z "$SESSION_EXISTS" ]; then
     tmux new -d -s "$selected_folder"
