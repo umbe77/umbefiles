@@ -6,7 +6,7 @@ else
 fi
 
 if [ -n "$SESSION_NAME" ]; then
-	work_session=$(tmux ls -F "#{session_name}" | rg "work")
+	work_session=$(tmux ls -F "#{session_name}" | rg "works")
 	if [ -n "$work_session" ]; then
 		tmux switch -t $work_session
 	fi

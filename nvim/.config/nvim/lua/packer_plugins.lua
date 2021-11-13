@@ -53,6 +53,9 @@ return require"packer".startup(function(use)
 	use 'akinsho/org-bullets.nvim'
 	use 'lukas-reineke/headlines.nvim'
 
+	-- terminals
+	use 'numToStr/FTerm.nvim'
+
 	-- miscellanea
     use 'windwp/nvim-autopairs'
 	use {
