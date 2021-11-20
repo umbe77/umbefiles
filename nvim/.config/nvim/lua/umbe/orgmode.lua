@@ -11,6 +11,7 @@ require"orgmode".setup{
 			org_do_demote = '<Leader>.',
 			org_promote_subtree = '<Leader>,q',
 			org_demote_subtree = '<Leader>.q',
+			org_show_help = '?',
 		},
 	},
 }
