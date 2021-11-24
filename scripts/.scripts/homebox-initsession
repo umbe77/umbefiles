@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+#Create working session
+tmux new -d -s "works" -c "$HOME"
+tmux neww -t "works:" -c "$HOME"
+
+#Create notes session
+tmux new -d -s "notes" -c "$HOME/my-orgs"
+
+#Create remote session
+tmux new -d -s "remote"

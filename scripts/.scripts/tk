@@ -6,9 +6,12 @@ else
 fi
 
 if [ -n "$SESSION_NAME" ]; then
-	work_session=$(tmux ls -F "#{session_name}" | rg "works")
-	if [ -n "$work_session" ]; then
-		tmux switch -t $work_session
+	current_session_name=$(tmux display-message -p '#S')
+	if [ "$SESSION_NAME" == "$current_session_name" ]; then
+		work_session=$(tmux ls -F "#{session_name}" | rg "^works\$")
+		if [ -n "$work_session" ]; then
+			tmux switch -t $work_session
+		fi
 	fi
     tmux kill-session -t "$SESSION_NAME"
     tmux display-message -d 600-d 1000  "    Killed session $SESSION_NAME"
