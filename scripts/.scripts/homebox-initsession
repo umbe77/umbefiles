@@ -9,3 +9,5 @@ tmux new -d -s "notes" -c "$HOME/my-orgs"
 
 #Create remote session
 tmux new -d -s "remote"
+
+tmux attach -t "works
