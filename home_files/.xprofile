@@ -1,5 +1,5 @@
 #!/usr/bin/env bash 
-[ -f ~/.screenlayout/homebox.sh ] && source ~/.screenlayout/homebox.sh 
+[ -f ~/.screenlayout/homebox.sh ] && source ~/.screenlayout/homebox.sh
 export _JAVA_AWT_WM_NONREPARENTING=1
 #setxkbmap -option grp:alt_shift_toggle us,it &
 #setxkbmap -option caps:escape &
@@ -29,13 +29,13 @@ while pgrep -u $UID -x volumeicon >/dev/null; do sleep 1; done
 
 command -v volumeicon > /dev/null && volumeicon &
 
- killall -q blueman-applet
- while pgrep -u $UID -x blueman-applet >/dev/null; do sleep 1; done
+killall -q blueman-applet
+while pgrep -u $UID -x blueman-applet >/dev/null; do sleep 1; done
 
- command -v blueman-applet > /dev/null && blueman-applet &
+command -v blueman-applet > /dev/null && blueman-applet &
 
- killall -q nm-applet
- while pgrep -u $UID -x nm-applet >/dev/null; do sleep 1; done
+killall -q nm-applet
+while pgrep -u $UID -x nm-applet >/dev/null; do sleep 1; done
  
 command -v nm-applet > /dev/null && nm-applet &
 
