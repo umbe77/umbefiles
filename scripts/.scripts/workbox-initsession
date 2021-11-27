@@ -9,4 +9,5 @@ tmux selectw -t "works:1"
 tmux new -d -s "notes" -c "$HOME/my-orgs"
 tmux send -t "notes:" "nvim ." C-m 
 
+#Attach works session
 tmux attach -t "works"
