@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+speedtest --server-id=$(speedtest --servers | tail -n +5 | fzf --reverse | awk '{print $1}')
+echo ""
+echo ""
+echo "Press any key to close..."
+read -r foo
