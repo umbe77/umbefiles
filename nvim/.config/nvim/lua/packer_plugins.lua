@@ -57,7 +57,9 @@ return require"packer".startup(function(use)
 	use 'numToStr/FTerm.nvim'
 
 	-- miscellanea
-    use 'windwp/nvim-autopairs'
+    use {
+		'windwp/nvim-autopairs',
+	}
 	use {
 		'rcarriga/nvim-notify',
 		config = function ()

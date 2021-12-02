@@ -38,7 +38,10 @@ vim.cmd('inoremap <expr> <c-j> (\"\\<C-n>\")')
 vim.cmd('inoremap <expr> <c-k> (\"\\<C-p>\")')
 
 -- Formatting files
-vim.api.nvim_set_keymap('n', '<leader>kd', ':lua vim.lsp.buf.formatting()', {noremap = true, silent = true})
+vim.api.nvim_set_keymap('n', '<leader>kd', ':lua vim.lsp.buf.formatting()<CR>', {noremap = true, silent = true})
+
+-- lsp
+vim.api.nvim_set_keymap('n', 'K', ':lua vim.lsp.buf.hover()<CR>', {noremap = true, silent = true})
 
 -- Telescope Mappings
 vim.api.nvim_set_keymap('n', '<Leader>P', ':Telescope commands<CR>', { noremap = true, silent = true})
