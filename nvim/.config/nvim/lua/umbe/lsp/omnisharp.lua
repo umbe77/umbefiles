@@ -1,7 +1,7 @@
 local pid = vim.fn.getpid()
 local data_path = vim.fn.stdpath('data')
 
-local omnisharp_bin = data_path .. "/lspinstall/csharp/omnisharp/run"
+local omnisharp_bin = data_path .. "/lsp_servers/omnisharp/omnisharp/run"
 
 require'lspconfig'.omnisharp.setup{
     cmd ={ omnisharp_bin, "--languageserver", "--hostPID", tostring(pid) },

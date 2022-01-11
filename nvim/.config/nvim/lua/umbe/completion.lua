@@ -2,10 +2,9 @@ require "nvim-autopairs".setup{}
 local cmp = require"cmp"
 local lspkind = require "lspkind"
 
-cmp.setup({
+cmp.setup{
 	formatting = {
-		format = lspkind.cmp_format(
-		{
+		format = lspkind.cmp_format({
 			with_text = true,
 			maxwidth = 50,
 			symbol_map = {
@@ -35,10 +34,10 @@ cmp.setup({
     snippet = {
       expand = function(args)
         -- For `vsnip` user.
-        vim.fn["vsnip#anonymous"](args.body)
+        -- vim.fn["vsnip#anonymous"](args.body)
 
         -- For `luasnip` user.
-        -- require('luasnip').lsp_expand(args.body)
+        require('luasnip').lsp_expand(args.body)
 
         -- For `ultisnips` user.
         -- vim.fn["UltiSnips#Anon"](args.body)
@@ -64,10 +63,10 @@ cmp.setup({
       { name = 'nvim_lsp' },
 
       -- For vsnip user.
-      { name = 'vsnip' },
+      -- { name = 'vsnip' },
 
       -- For luasnip user.
-      -- { name = 'luasnip' },
+      { name = 'luasnip' },
 
       -- For ultisnips user.
       -- { name = 'ultisnips' },
@@ -75,7 +74,7 @@ cmp.setup({
       { name = 'buffer' },
 	  { name = 'orgmode' },
     }
-})
+}
 
 local cmp_autopairs = require("nvim-autopairs.completion.cmp")
 cmp.event:on('confirm_done', cmp_autopairs.on_confirm_done({ map_char = { tex = '' } }))

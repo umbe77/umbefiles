@@ -12,7 +12,8 @@ return require"packer".startup(function(use)
     use 'glepnir/lspsaga.nvim'
     use 'onsails/lspkind-nvim'
     use 'kosayoda/nvim-lightbulb'
-    use 'kabouzeid/nvim-lspinstall'
+    -- use 'kabouzeid/nvim-lspinstall'
+	use 'williamboman/nvim-lsp-installer'
     use "ray-x/lsp_signature.nvim"
 
     use 'terrortylor/nvim-comment'
@@ -21,15 +22,17 @@ return require"packer".startup(function(use)
     use 'hrsh7th/nvim-cmp'
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-buffer'
-    use 'hrsh7th/vim-vsnip'
-    use 'hrsh7th/cmp-vsnip'
+    -- use 'hrsh7th/vim-vsnip'
+    -- use 'hrsh7th/cmp-vsnip'
+	use 'L3MON4D3/LuaSnip'
+	use 'saadparwaiz1/cmp_luasnip'
 
 	-- Colorscheme and connected indent lines
     use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
     use {'lukas-reineke/indent-blankline.nvim'}
 	-- use 'sunjon/shade.nvim'
     use 'navarasu/onedark.nvim'
-	use 'EdenEast/nightfox.nvim'
+	-- use 'EdenEast/nightfox.nvim'
 	use {
 	  'hoob3rt/lualine.nvim',
 	  requires = {'kyazdani42/nvim-web-devicons', opt = true}

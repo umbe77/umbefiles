@@ -1,6 +1,6 @@
 local data_path = vim.fn.stdpath('data')
 require'lspconfig'.tsserver.setup {
-    cmd = {data_path .. "/lspinstall/typescript/node_modules/.bin/typescript-language-server", "--stdio"},
+    cmd = {data_path .. "/lsp_servers/tsserver/node_modules/.bin/typescript-language-server", "--stdio"},
     capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities()),
     filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
     -- This makes sure tsserver is not used for formatting (I prefer prettier)
