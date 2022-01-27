@@ -55,7 +55,7 @@ return require"packer".startup(function(use)
 	-- orgmode
 	use {'kristijanhusak/orgmode.nvim'}
 	use 'akinsho/org-bullets.nvim'
-	use 'lukas-reineke/headlines.nvim'
+	-- use 'lukas-reineke/headlines.nvim'
 
 	-- terminals
 	use 'numToStr/FTerm.nvim'

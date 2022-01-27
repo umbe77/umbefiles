@@ -20,4 +20,4 @@ require"org-bullets".setup{
     symbols = { "◉", "○", "✸", "✿" }
 }
 
- require"headlines".setup{}
+ -- require"headlines".setup{}
