@@ -5,7 +5,7 @@ local lspkind = require "lspkind"
 cmp.setup{
 	formatting = {
 		format = lspkind.cmp_format({
-			with_text = true,
+			mode = 'symbol_text',
 			maxwidth = 50,
 			symbol_map = {
 			  Text = '  ',
