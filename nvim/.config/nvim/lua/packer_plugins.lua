@@ -16,6 +16,7 @@ return require"packer".startup(function(use)
     -- use 'kabouzeid/nvim-lspinstall'
 	use 'williamboman/nvim-lsp-installer'
     use "ray-x/lsp_signature.nvim"
+	use "jose-elias-alvarez/null-ls.nvim"
 
     use 'terrortylor/nvim-comment'
 
