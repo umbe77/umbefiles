@@ -13,6 +13,7 @@ require("umbe.lightbulb")
 require("umbe.completion")
 require("umbe.git")
 require("umbe.lsp")
+require("umbe.nvim-tree")
 
 --Personal Plugins
 require("gitignore").setup()
