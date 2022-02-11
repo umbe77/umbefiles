@@ -18,8 +18,7 @@ return require("packer").startup(function(use)
 	use("ray-x/lsp_signature.nvim")
 	use("jose-elias-alvarez/null-ls.nvim")
 
-	use("terrortylor/nvim-comment")
-
+	use("numToStr/Comment.nvim")
 	--autocomplete
 	use("hrsh7th/nvim-cmp")
 	use("hrsh7th/cmp-nvim-lsp")
@@ -32,6 +31,8 @@ return require("packer").startup(function(use)
 	-- Colorscheme and connected indent lines
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 	use({ "lukas-reineke/indent-blankline.nvim" })
+	use("JoosepAlviste/nvim-ts-context-commentstring")
+	use("windwp/nvim-ts-autotag")
 	-- use 'sunjon/shade.nvim'
 	use("navarasu/onedark.nvim")
 	-- use 'EdenEast/nightfox.nvim'
