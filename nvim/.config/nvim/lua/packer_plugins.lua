@@ -27,6 +27,7 @@ return require("packer").startup(function(use)
 	-- use 'hrsh7th/cmp-vsnip'
 	use("L3MON4D3/LuaSnip")
 	use("saadparwaiz1/cmp_luasnip")
+	use("rafamadriz/friendly-snippets")
 
 	-- Colorscheme and connected indent lines
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
