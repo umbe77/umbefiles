@@ -6,7 +6,6 @@ null_ls.setup({
 		formatting.stylua,
 		formatting.prettier,
 		formatting.gofmt,
-		linter.eslint,
 	},
 	on_attach = function(client)
 		if client.resolved_capabilities.document_formatting then
