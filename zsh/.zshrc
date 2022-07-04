@@ -49,16 +49,19 @@ setopt histignorealldups sharehistory
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 source ~/.pathdef
 #export PATH=$HOME/.gem/ruby/2.7.0/bin:$HOME/.dotnet/tools:$HOME/.scripts:$HOME/bin:/snap/bin:/usr/local/bin:$HOME/.cargo/bin:$HOME/.local/bin:$PATH
+export PATH=$PATH:$HOME/flutter/bin
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/go
 #export PATH=$PATH:$GOPATH/bin
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 export XDG_CONFIG_HOME=$HOME/.config
 export TZ=Europe/Rome
 export SSH_ASKPASS=$HOME/.scripts/ssh-ask-passwd
 
 export DENO_INSTALL=$HOME/.deno
 export PATH=$DENO_INSTALL/bin:$PATH
+
+export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
 
 #export CURRENT_CITY_PATH=$HOME/.cache/umbe/current_city
 #export WEATHER_CACHE=$HOME/.cache/umbe/weather
@@ -135,6 +138,8 @@ source ~/.aliasrc
 #--color fg:#D8DEE9,bg:#2E3440,hl:#A3BE8C,fg+:#D8DEE9,bg+:#434C5E,hl+:#A3BE8C
 #--color pointer:#BF616A,info:#4C566A,spinner:#4C566A,header:#4C566A,prompt:#81A1C1,marker:#EBCB8B
 #'
+
+[ -f ~/.config/zsh/plugins/zsh-completions/zsh-completions.plugin.zsh ] && source ~/.config/zsh/plugins/zsh-completions/zsh-completions.plugin.zsh
 
 [ -f ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ] && source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 

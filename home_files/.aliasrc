@@ -26,3 +26,4 @@ alias upall="paru -Syyyu --noconfirm"
 
 #git
 alias gl='git log --oneline | fzf --preview "git show {+1} | bat --color always -p" --reverse'
+
