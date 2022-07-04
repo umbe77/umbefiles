@@ -55,7 +55,7 @@ vim.api.nvim_set_keymap("n", "fd", ":Telescope current_buffer_fuzzy_find<CR>", {
 vim.api.nvim_set_keymap("n", "<Leader>b", ":Telescope buffers<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "rf", ":Telescope lsp_references<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "df", ":Telescope lsp_definitions<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<Leader>ca", ":Telescope lsp_code_actions<CR>", { noremap = true, silent = true })
+--vim.api.nvim_set_keymap("n", "<Leader>ca", ":Telescope lsp_code_actions<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "rn", ":Lspsaga rename<CR>", { noremap = true, silent = true })
 
 -- Terminal

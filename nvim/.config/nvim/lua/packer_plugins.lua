@@ -56,7 +56,10 @@ return require("packer").startup(function(use)
 	use("sindrets/diffview.nvim")
 
 	-- orgmode
-	use({ "kristijanhusak/orgmode.nvim" })
+	use({
+		"nvim-orgmode/orgmode",
+	})
+	--use({ "kristijanhusak/orgmode.nvim" })
 	use("akinsho/org-bullets.nvim")
 	-- use 'lukas-reineke/headlines.nvim'
 
@@ -96,8 +99,5 @@ return require("packer").startup(function(use)
 		requires = {
 			"kyazdani42/nvim-web-devicons", -- optional, for file icon
 		},
-		config = function()
-			require("nvim-tree").setup({})
-		end,
 	})
 end)

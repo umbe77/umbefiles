@@ -17,8 +17,8 @@ require("orgmode").setup({
 	},
 })
 
-require("org-bullets").setup({
-	symbols = { "◉", "○", "✸", "✿" },
-})
+-- require("org-bullets").setup({
+-- 	symbols = { "◉", "○", "✸", "✿" },
+-- })
 
 -- require"headlines".setup{}
