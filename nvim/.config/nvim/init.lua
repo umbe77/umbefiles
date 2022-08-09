@@ -12,6 +12,7 @@ require("umbe.comment")
 require("umbe.lightbulb")
 require("umbe.completion")
 require("umbe.git")
+require("umbe.mason")
 require("umbe.lsp")
 require("umbe.nvim-tree")
 

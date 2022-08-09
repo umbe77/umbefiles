@@ -1,7 +1,8 @@
 local data_path = vim.fn.stdpath("data")
 require("lspconfig").jsonls.setup({
 	cmd = {
-		data_path .. "/lsp_servers/jsonls/node_modules/vscode-langservers-extracted/bin/vscode-json-language-server",
+		data_path
+			.. "/mason/packages/json-lsp/node_modules/vscode-langservers-extracted/bin/vscode-json-language-server",
 		"--stdio",
 	},
 	capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities()),

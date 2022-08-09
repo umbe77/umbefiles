@@ -1,6 +1,9 @@
 local data_path = vim.fn.stdpath("data")
 require("lspconfig").tsserver.setup({
-	cmd = { data_path .. "/lsp_servers/tsserver/node_modules/.bin/typescript-language-server", "--stdio" },
+	cmd = {
+		data_path .. "/mason/packages/typescript-language-server/node_modules/.bin/typescript-language-server",
+		"--stdio",
+	},
 	capabilities = require("cmp_nvim_lsp").update_capabilities(vim.lsp.protocol.make_client_capabilities()),
 	filetypes = {
 		"javascript",

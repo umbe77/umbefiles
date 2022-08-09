@@ -14,7 +14,9 @@ return require("packer").startup(function(use)
 	use("onsails/lspkind-nvim")
 	use("kosayoda/nvim-lightbulb")
 	-- use 'kabouzeid/nvim-lspinstall'
-	use("williamboman/nvim-lsp-installer")
+	-- use("williamboman/nvim-lsp-installer")use
+	use({ "williamboman/mason.nvim" })
+	use({ "williamboman/mason-lspconfig.nvim" })
 	use("ray-x/lsp_signature.nvim")
 	use("jose-elias-alvarez/null-ls.nvim")
 
@@ -48,7 +50,7 @@ return require("packer").startup(function(use)
 		requires = { { "nvim-lua/popup.nvim" }, { "nvim-lua/plenary.nvim" } },
 	})
 	use("nvim-telescope/telescope-media-files.nvim")
-	use { 'nvim-telescope/telescope-ui-select.nvim' }
+	use({ "nvim-telescope/telescope-ui-select.nvim" })
 	-- git
 	use({ "lewis6991/gitsigns.nvim", requires = { "nvim-lua/plenary.nvim" } })
 	use("f-person/git-blame.nvim")
