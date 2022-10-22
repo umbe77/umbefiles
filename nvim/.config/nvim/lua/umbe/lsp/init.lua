@@ -20,8 +20,8 @@ require("umbe.lsp.go")
 require("umbe.lsp.tsserver")
 require("umbe.lsp.omnisharp")
 require("umbe.lsp.bash")
---require("umbe.lsp.svelte")
 require("umbe.lsp.docker")
---require("umbe.lsp.tailwindcss")
+--[[ require("umbe.lsp.svelte") ]]
+--[[ require("umbe.lsp.tailwindcss") ]]
 require("umbe.lsp.nullls")
 require("umbe.lsp.json")

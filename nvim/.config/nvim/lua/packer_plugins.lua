@@ -9,8 +9,7 @@ return require("packer").startup(function(use)
 
 	-- LSP
 	use("neovim/nvim-lspconfig")
-	-- use 'glepnir/lspsaga.nvim'
-	use({ "tami5/lspsaga.nvim", branch = "nvim6.0" })
+	use 'glepnir/lspsaga.nvim'
 	use("onsails/lspkind-nvim")
 	use("kosayoda/nvim-lightbulb")
 	-- use 'kabouzeid/nvim-lspinstall'
