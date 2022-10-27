@@ -69,3 +69,4 @@ vim.api.nvim_set_keymap(
 
 -- Execute lua inside nvim
 vim.api.nvim_set_keymap("n", "<F5>", ":luafile %<CR>", { noremap = true, silent = true })
+
