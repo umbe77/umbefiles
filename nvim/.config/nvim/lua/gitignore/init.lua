@@ -10,7 +10,6 @@ local popup = require('plenary.popup')
 
 local curl = require "plenary.curl"
 local path = require "plenary.path"
-local json = require "gitignore.json"
 
 local notify = require "notify"
 local log = require('telescope.log')
@@ -23,7 +22,8 @@ local list = function()
 	local response = curl["get"](gitIgnoreUrl)
 
 	if (response ~= nil and response.status == 200) then
-		local languagesHash = json.decode(response.body)
+		--[[ local languagesHash = json.decode(response.body) ]]
+		local languagesHash = vim.fn.json_decode(response.body)
 		local languages = {}
 		for _, value in pairs(languagesHash) do
 			table.insert(languages, value)
