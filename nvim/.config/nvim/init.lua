@@ -15,6 +15,7 @@ require("umbe.git")
 require("umbe.mason")
 require("umbe.lsp")
 require("umbe.nvim-tree")
+require("umbe.neoscroll")
 
 --Personal Plugins
 require("gitignore").setup()

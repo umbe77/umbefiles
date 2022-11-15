@@ -34,6 +34,7 @@ return require("packer").startup(function(use)
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 	use({ "lukas-reineke/indent-blankline.nvim" })
 	use("JoosepAlviste/nvim-ts-context-commentstring")
+	use 'karb94/neoscroll.nvim'
 	use("windwp/nvim-ts-autotag")
 	-- use 'sunjon/shade.nvim'
 	use("navarasu/onedark.nvim")
