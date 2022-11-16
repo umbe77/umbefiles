@@ -49,9 +49,9 @@ setopt histignorealldups sharehistory
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 source ~/.pathdef
 #export PATH=$HOME/.gem/ruby/2.7.0/bin:$HOME/.dotnet/tools:$HOME/.scripts:$HOME/bin:/snap/bin:/usr/local/bin:$HOME/.cargo/bin:$HOME/.local/bin:$PATH
-export PATH=$PATH:$HOME/flutter/bin
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/go
+export PATH=$PATH:$HOME/flutter/bin:$GOBIN
 #export PATH=$PATH:$GOPATH/bin
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 export XDG_CONFIG_HOME=$HOME/.config
