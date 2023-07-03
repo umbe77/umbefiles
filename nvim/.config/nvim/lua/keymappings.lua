@@ -42,7 +42,7 @@ vim.api.nvim_set_keymap("n", "<leader>kd", ":lua vim.lsp.buf.format()<CR>", { no
 
 -- lsp
 -- vim.api.nvim_set_keymap('n', 'K', ':lua vim.lsp.buf.hover()<CR>', {noremap = true, silent = true})
-vim.api.nvim_set_keymap("n", "K", ":Lspsaga hover_doc<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "K", ":Lspsaga hover_doc ++keep<CR>", { noremap = true, silent = true })
 
 -- File Explorer
 vim.api.nvim_set_keymap("n", "<Leader>e", ":NvimTreeToggle<CR>", { noremap = true, silent = true })

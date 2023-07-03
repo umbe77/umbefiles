@@ -25,3 +25,5 @@ require("umbe.lsp.docker")
 --[[ require("umbe.lsp.tailwindcss") ]]
 require("umbe.lsp.nullls")
 require("umbe.lsp.json")
+require("umbe.lsp.ocaml")
+require("umbe.lsp.zig")
