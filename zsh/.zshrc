@@ -51,7 +51,7 @@ source ~/.pathdef
 #export PATH=$HOME/.gem/ruby/2.7.0/bin:$HOME/.dotnet/tools:$HOME/.scripts:$HOME/bin:/snap/bin:/usr/local/bin:$HOME/.cargo/bin:$HOME/.local/bin:$PATH
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/go
-export PATH=$PATH:$HOME/flutter/bin:$GOBIN
+export PATH=$PATH:$HOME/flutter/bin:$GOBIN:$HOME/.local/bin/Postman
 #export PATH=$PATH:$GOPATH/bin
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
 export XDG_CONFIG_HOME=$HOME/.config
@@ -161,7 +161,7 @@ source ~/.aliasrc
 test -r "~/.config/myconfigs/dir_colors" && eval $(dircolors ~/.config/myconfigs/dir_colors)
 
 if [ -z "$TMUX" ]; then
-  neofetch
+  fastfetch
 fi
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
